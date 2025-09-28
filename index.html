@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Awesome Gallery" />
     <title>Галерея Изображений</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
 
   <body>
     <header>
-      <h1>Галерея Изображений</h1>
+      <h1 class="main-title">Галерея Изображений</h1>
       <nav>
         <a href="pictures.html">Картинки</a>
         <a href="profile.html">Профиль</a>
@@ -19,7 +20,7 @@
       <hr>
     </header>
     <main>
-      <p>
+      <p class="content-text">
         Проект - Галерея Изображений будет представлять собой коллаж с
         картинками. С возможностью сортировки по тегам и дате добавления. Также
         будет реализована возможность просмотра картинок в виде сетки(grid) или
@@ -40,7 +41,7 @@
         <li>Фильтры</li>
       </ol>
       
-      <section>
+      <section class="gallery-section">
         <h2>Видео о современном искусстве</h2>
         <video width="640" height="360" controls poster="https://img.freepik.com/free-photo/abstract-textured-background_1258-30436.jpg">
           <source src="./assets/5998430_Painting_Creative_3840x2160.mp4" type="video/mp4">
@@ -58,7 +59,7 @@
         <p>Расслабляющая музыка для комфортного просмотра экспозиции</p>
       </section>
       
-      <blockquote>
+      <blockquote id="special-quote">
         An art gallery is a room or a building in which visual art is displayed.
         In Western cultures from the mid-15th century, a gallery was any long,
         narrow covered passage along a wall, first used in the sense of a place
