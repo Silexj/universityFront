@@ -1,14 +1,12 @@
-/* Базовые стили */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI';
+    background-color: #eef6d0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 0;
     padding: 20px;
 }
 
-/* Заголовок */
 .main-title {
     color: #2c3e50;
     font-size: 2.5em;
@@ -17,7 +15,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* Основной текст */
 .content-text {
     font-size: 1.1em;
     margin: 15px 0;
@@ -26,7 +23,6 @@ body {
     border-radius: 5px;
 }
 
-/* Секции */
 .gallery-section {
     background: #ecf0f1;
     padding: 15px;
@@ -35,7 +31,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Списки */
 ul, ol {
     background: #ffffffaa;
     padding: 15px 30px;
@@ -52,7 +47,6 @@ li:hover {
     border-radius: 3px;
 }
 
-/* Цитата */
 #special-quote {
     font-style: italic;
     padding: 20px;
@@ -63,7 +57,6 @@ li:hover {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-/* Изображение */
 img {
     border: 3px solid #bdc3c7;
     border-radius: 8px;
@@ -72,7 +65,6 @@ img {
     height: auto;
 }
 
-/* Ссылки */
 a {
     color: #2980b9;
     text-decoration: none;
@@ -86,11 +78,69 @@ a:hover {
     transition: 0.3s;
 }
 
-/* Футер */
 footer {
-    margin-top: 30px;
-    padding: 15px;
-    background: #2c3e50;
-    color: #ecf0f1;
-    border-radius: 5px;
+  padding: 25px;
+  margin: 40px 0 20px 0;
+  border: 2px solid #34495e;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+a::after {
+  content: " ↗";
+  font-size: 0.8em;
+}
+
+a::before {
+  content: "📄 ";
+}
+
+
+ul li:first-child,
+ol li:first-child {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+ul li:nth-child(even) {
+  background-color: #cddcec;
+}
+
+
+#special-quote::before {
+  content: "“";
+  font-size: 4em;
+  color: #3498db;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  opacity: 0.7;
+}
+
+#special-quote {
+  position: relative;
+  padding-left: 60px;
+}
+
+footer {
+  padding: 25px;
+  margin: 40px 0 20px 0;
+  border: 2px solid #9db6cf;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  
+  box-sizing: border-box;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
 }
